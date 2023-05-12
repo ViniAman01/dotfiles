@@ -13,9 +13,9 @@ fi
 
 PLUGINS=("nerdtree" "vim-airline" "vim-airline-themes")
 
-for i in "$PLUGINS[i]"
+for i in "$PLUGINS"
 do
-    cp -r $PLUGINS $BUNDLE
+    cp -r $i $BUNDLE
 done
 
 cp .vimrc $HOME

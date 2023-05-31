@@ -13,7 +13,7 @@ fi
 
 PLUGINS=("nerdtree" "vim-airline" "vim-airline-themes")
 
-for i in "$PLUGINS"
+for i in "${PLUGINS[@]}"
 do
     cp -r $i $BUNDLE
 done

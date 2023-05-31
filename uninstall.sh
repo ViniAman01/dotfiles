@@ -2,7 +2,7 @@
 
 PLUGINS=("nerdtree" "vim-airline" "vim-airline-themes")
 
-for p in "$PLUGINS"
+for p in "${PLUGINS[@]}"
 do
     rm -r $HOME/.vim/bundle/$p
 done

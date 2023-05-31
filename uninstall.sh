@@ -1,6 +1,11 @@
 #!/bin/bash
+
+PLUGINS=("nerdtree" "vim-airline" "vim-airline-themes")
+
+for p in "$PLUGINS"
+do
+    rm -r $HOME/.vim/bundle/$p
+done
+
 rm $HOME/.vimrc
-rm -r $HOME/.vim/bundle/nerdtree
-rm -r $HOME/.vim/bundle/vim-airline
-rm -r $HOME/.vim/bundle/vim-airline-themes
 history -c

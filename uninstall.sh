@@ -1,10 +1,12 @@
 #!/bin/bash
 
-PLUGINS=("nerdtree" "vim-airline" "vim-airline-themes")
+BUNDLE=$HOME/.vim/bundle
 
-for p in "${PLUGINS[@]}"
+PLUGINS=(nerdtree vim-airline vim-airline-themes)
+
+for p in ${PLUGINS[@]}
 do
-    rm -r $HOME/.vim/bundle/$p
+    rm -r $BUNDLE/$p
 done
 
 rm $HOME/.vimrc
